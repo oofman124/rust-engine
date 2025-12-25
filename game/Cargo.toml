@@ -1,0 +1,38 @@
+[package]
+name = "game"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# --------------------
+# Engine (sidekick, not dependency)
+# --------------------
+engine = { path = "../engine"}
+# features = ["bullet"] 
+# --------------------
+# Core utilities
+# --------------------
+log = "0.4"
+env_logger = "0.11"
+
+glam = "0.27"
+
+anyhow = "1.0"
+thiserror = "1.0"
+
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+
+# --------------------
+# Gameplay scripting
+# --------------------
+mlua = { version = "0.9", features = ["lua54"] }
+
+rhai = "1.18"
+
+# --------------------
+# Input & gameplay helpers
+# --------------------
+rand = "0.8"
+gilrs = "0.10"

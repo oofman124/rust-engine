@@ -1,0 +1,16 @@
+{
+  "rust-analyzer.cargo.workspaceSymbol": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.inlayHints.enable": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "files.associations": {
+    "*.rhai": "rhai",
+    "*.lua": "lua"
+  },
+  "search.exclude": {
+    "**/target": true
+  },
+  "rust-analyzer.checkOnSave": true
+}
